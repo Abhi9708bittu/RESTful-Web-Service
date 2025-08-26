@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Create Person</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<h1>Create Person</h1>
+	<form method="POST" action="/person">
+		<div>
+			<label>Name</label>
+			<input name="name" required />
+		</div>
+		<div>
+			<label>Age</label>
+			<input name="age" type="number" min="0" required />
+		</div>
+		<div>
+			<label>Gender</label>
+			<select name="gender" required>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+		<div>
+			<label>Mobile</label>
+			<input name="mobile" required />
+		</div>
+		<button type="submit">Create</button>
+		<a href="/person">Cancel</a>
+	</form>
+</body>
+</html>
